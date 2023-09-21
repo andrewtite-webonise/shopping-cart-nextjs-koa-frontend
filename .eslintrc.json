@@ -1,0 +1,89 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": [
+        "next/babel"
+      ]
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "Calendly": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "indent": [
+      "error", 2],
+    "react/button-has-type": [
+      "error",
+      {
+        "button": true,
+        "submit": true,
+        "reset": true
+      }
+    ],
+    "react/function-component-definition": [
+      "error", {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/no-access-state-in-setstate": "error",
+    "react/no-did-mount-set-state": [
+      "error", "disallow-in-func"
+    ],
+    "react/no-did-update-set-state": [
+      "error", "disallow-in-func"
+    ],
+    "react/no-unused-state": "error",
+    "react/no-will-update-set-state": [
+      "error", "disallow-in-func"
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/state-in-constructor": [
+      "error", "always"
+    ],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-curly-spacing": [
+      "error",
+      {
+        "when": "always",
+        "children": {
+          "when": "always"
+        },
+        "attributes": true
+      }
+    ],
+    "react/display-name": "off",
+    "no-prototype-builtins": "off"
+  }
+}
